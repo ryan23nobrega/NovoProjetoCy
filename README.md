@@ -1,26 +1,38 @@
-# 🚀 Projeto de Automação E2E com Cypress
+# 🚀 Automação E2E com Cypress (Sauce Demo)
 
-Este projeto contém testes automatizados E2E utilizando Cypress, simulando fluxos reais de um e-commerce.
+![Cypress Version](https://img.shields.io/badge/cypress-13.x-brightgreen)
+![Node Version](https://img.shields.io/badge/node-24.x-blue)
+[![Testes E2E Cypress](https://github.com/ryan23nobrega/NovoProjetoCy/actions/workflows/cypress.yml/badge.svg)](https://github.com/ryan23nobrega/NovoProjetoCy/actions/workflows/cypress.yml)
 
-## 📌 Tecnologias
-- Cypress
-- JavaScript
-- Node.js
+Este projeto contém uma suíte de testes automatizados End-to-End (E2E) desenvolvida para garantir a qualidade dos fluxos críticos de um e-commerce, utilizando as melhores práticas como o padrão **Page Objects**.
 
-## 🧪 Testes implementados
+---
 
-### 🔐 Login
-- Login com sucesso
-- Login com senha inválida
-- Login com usuário inválido
-- Validação de mensagens de erro
+## 🧪 Cenários de Teste Abrangidos
 
-### 🛒 Fluxos após login
-- Adicionar produto ao carrinho
-- Logout
+### 🔐 Autenticação (Login)
+* [x] **Sucesso:** Login com usuário e senha válidos.
+* [x] **Erro de Credenciais:** Tentativas com senha ou usuário inválidos.
+* [x] **Validação:** Verificação de mensagens de erro exibidas pelo sistema.
 
-## ▶️ Como rodar o projeto
+### 🛒 Fluxos de Negócio
+* [x] **Carrinho:** Adição de produtos ao carrinho com sucesso.
+* [x] **Sessão:** Fluxo completo de logout do usuário.
 
-```bash
-npm install
-npx cypress open
+---
+
+## 🛠️ Tecnologias e Ferramentas
+* **Framework:** [Cypress](https://www.cypress.io/)
+* **Linguagem:** JavaScript
+* **CI/CD:** GitHub Actions (Execução automática a cada push)
+* **Padrão de Projeto:** Page Objects (Arquitetura limpa e reutilizável)
+
+---
+
+## ▶️ Como Rodar Localmente
+
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/ryan23nobrega/NovoProjetoCy.git](https://github.com/ryan23nobrega/NovoProjetoCy.git)
