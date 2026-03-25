@@ -1,0 +1,24 @@
+name: Testes E2E Cypress
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24 # Usando a versão mais atual para evitar o erro
+
+      - name: Instalar Dependências
+        run: npm install
+
+      - name: Rodar Testes do Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          # Se você precisar que um servidor suba antes, adicione o comando aqui
+          # command: npm run test
